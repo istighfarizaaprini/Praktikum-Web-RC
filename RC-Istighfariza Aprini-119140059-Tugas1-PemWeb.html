@@ -1,0 +1,191 @@
+<html>
+    <head>
+        <title>Praktikum PemWeb Mg 1</title>
+        <style type="text/css">
+            header{
+                background-image: url(kaktus.jpg);
+                background-repeat: no-repeat;
+                background-position: right;
+                font-size:70pt;
+                font-family: 'Courier New';
+                margin: 50px 50px 20px 60px;
+            }
+            nav{
+                font-size: 15pt;
+                padding-left: 40pt;
+                
+            }
+            a{
+                text-decoration: none;
+                font-size: 20px;font-family:sans-serif;
+                padding: 14px 30px
+            }
+            ul{
+                padding: 14px
+            }
+            li{
+                list-style: none;
+                display: inline;
+            }
+            li a{
+                background: rgb(19, 71, 78); color:#d4d4d4;
+            } 
+            li a:hover{
+                background: #4da4ff; color:#fff;
+            } 
+            .navi{
+                background: rgb(19, 71, 78); height: 50px
+            }
+            section{
+                font-size: 25px;
+                font-family:'Times New Roman';
+                margin: 20pt 80pt 20pt 80pt;
+                text-align: justify;
+            }
+            form
+            {
+                background-color: rgba(184, 207, 228, 0.897);
+                color: rgb(119, 40, 29);
+                font-family:'Segoe UI';
+                font-size: 35px;
+                text-align: center;
+                width: 30%;
+                margin: 0pt 400pt 50pt 80pt;
+                padding: 20px;
+            }
+            table{
+                font-size: 20px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                margin: 0pt 20pt 20pt 50pt;
+                padding: 10pt;
+            }
+            footer{
+                background-color: rgb(43, 43, 48);
+                padding: 10pt;
+                color: burlywood;
+            }
+            #scroll-btn {
+                display: none;
+                position: fixed;
+                bottom: 20px;
+                right: 30px;
+                z-index: 99;
+                font-size: 18px;
+                border: none;
+                outline: none;
+                background-color: red;
+                color: white;
+                cursor: pointer;
+                padding: 15px 19px;
+                border-radius: 100px;
+            }
+            
+            #scroll-btn:hover {
+                background-color: #555;
+            }
+            
+            .sampel {
+                min-height: 2000px;
+            }
+        </style>
+    </head>
+        
+    <body>
+        
+
+        <header> <img src="logo.png" style="width: 90px;height: 90px;"/> HYBE LABELS</header>
+        
+        <nav class="navi">
+            <ul>
+                <li><b><a href="https://hybecorp.com">COMPANY</a></b></li>
+                <li><b><a href="https://www.idntimes.com/hype/entertainment/riyani-smr/fandom-grup-hybe-labels-c1c2/6">ARTIST</a></b></li>
+                <li><b><a href="https://www.bighitaudition.com/?lang=en">AUDITION</a></b></li>
+            </ul>
+        </nav>
+        
+        <button onclick="topFunction()" id="scroll-btn" title="Top">&uarr;</button>
+
+        <script>
+            window.onscroll = function() {scrollFunction()};
+             
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scroll-btn").style.display = "block";
+              } else {
+                document.getElementById("scroll-btn").style.display = "none";
+              }
+            }
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+
+        <section>
+                Big Hit Entertainment resmi berganti nama menjadi HYBE yang diumumkan oleh CEO sekaligus Chairman HYBE Bang Si-hyuk.
+                HYBE merupakan wadah yang lebih besar bagi Big Hit untuk bernaung. HYBE Labels terdiri dari BIGHIT Music, BELIFT LAB, 
+                HYBE Labels Japan serta beberapa agensi yang telah diakuisisi sebelumnya seperti Source Music, Pledis Entertainment, 
+                dan KOZ Entertainment. Setiap agensi disebut akan mempertahankan independensi dan manajemen sendiri. Artis di bawah naungan
+                HYBE Labels adalah BTS, TXT, SEVENTEEN, NU'EST, GFRIEND dan ENHYPEN. Namun pada tahun ini agensi mengumumkan pembubaran grup
+                GFRIEND dari Source Music.
+        </section>
+
+        <form>
+            <legend><b>VOTE</b></legend>
+            <table>
+                <tr>
+                    <td>Your favorite grup</td>
+                    <td>:</td>
+                    <td><input type="checkbox" name="grup" value="BTS"/>BTS<br>
+                        <input type="checkbox" name="grup" value="TXT"/>TXT<br>
+                        <input type="checkbox" name="grup" value="SEVENTEEN"/>SEVENTEEN<br>
+                        <input type="checkbox" name="grup" value="NU'EST"/>NU'EST<br>
+                        <input type="checkbox" name="grup" value="ENHYPEN"/>ENHYPEN</td>
+                </tr>
+
+                <tr>
+                    <td>Your favorite song</td>
+                    <td>:</td>
+                    <td><input type="text" name="song"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td>Your fandom</td>
+                    <td>:</td>
+                    <td><input type="radio" name="fandom" value="Army"/>Army<br>
+                        <input type="radio" name="fandom" value="MOA"/>MOA<br>
+                        <input type="radio" name="fandom" value="CARAT"/>CARAT<br>
+                        <input type="radio" name="fandom" value="L.O.V.E"/>L.O.V.E<br>
+                        <input type="radio" name="fandom" value="ENGENE"/>ENGENE</td>
+                </tr>
+
+                <tr>
+                    <td>Best leader</td>
+                    <td>:</td>
+                    <td><select name="leader">
+                    <option>--Option--</option>
+                    <option>Kim Namjoon</option>
+                    <option>Choi Soobin</option>
+                    <option>Choi Seungcheol</option>
+                    <option>Kim Jonghyun</option>
+                    <option>Yang Jungwon</option>
+                    </select></td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td><input type="submit" name="VOTE" value="VOTE"/>
+                </tr>
+
+                </table>
+        </form>
+
+        <footer>
+            <P>copyright by Istighfariza Aprini
+            </P>
+
+        </footer>
+
+    </body>
+</html>
