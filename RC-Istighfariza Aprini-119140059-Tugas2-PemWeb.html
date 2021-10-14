@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <title>Praktikum PemWeb Mg 2</title>
+        <style type="text/css">
+            header{
+                font-size:40pt;
+                font-family: 'Courier New';
+                margin: 0px 50px 20px 60px;
+                font-weight: bold;
+            }
+            nav{
+                font-size: 15pt;
+                padding-left: 40pt;  
+            }
+            a{
+                text-decoration: none;
+                font-size: 20px;font-family:sans-serif;
+                padding: 14px 30px
+            }
+            ul{
+                padding: 14px
+            }
+            li{
+                list-style: none;
+                display: inline;
+            }
+            li a1{
+                color:#ffffff;
+            } 
+            li a{
+                color:#ffffff;
+            } 
+            .navi{
+                background: rgb(160, 58, 71); height: 55px
+            }
+            #body {
+            float: left;
+            width: 70%;
+            height: 400px;
+            background-color: rgb(248, 239, 239);
+            font-size: 15pt;
+            font-family:sans-serif;
+            color:rgb(66, 9, 9);
+            }
+            #berita {
+            float: left;
+            width: 30%;
+            height: 400px;
+            background-color: rgb(43, 124, 156);
+            }
+            footer{
+                background-color: rgb(43, 43, 48);
+                padding: 10pt;
+                color: burlywood;
+            }
+            #scroll-btn {
+                display: none;
+                position: fixed;
+                bottom: 20px;
+                right: 30px;
+                z-index: 99;
+                font-size: 18px;
+                border: none;
+                outline: none;
+                background-color: red;
+                color: white;
+                cursor: pointer;
+                padding: 15px 19px;
+                border-radius: 100px;
+            }
+            
+            #scroll-btn:hover {
+                background-color: #555;
+            }
+            
+            .sampel {
+                min-height: 2000px;
+            }
+        </style>
+    </head>
+        
+    <body>
+        
+
+        <header> <img src="Logo_ITERA.png" style="width: 150px;height: 150px;"/> INSTITUT TEKNOLOGI SUMATERA</header>
+        
+        <nav class="navi">
+            <ul>
+                <li><b><a href="https://www.itera.ac.id">HOME</a></b></li>
+                <li><b><a href="https://ppid.itera.ac.id">CONTACT</a></b></li>
+                <li><b><a href="https://www.itera.ac.id/tentang-institut-teknologi-sumatera">ABOUT</a></b></li>
+            </ul>
+        </nav>
+        
+        <button onclick="topFunction()" id="scroll-btn" title="Top">&uarr;</button>
+
+        <script>
+            window.onscroll = function() {scrollFunction()};
+             
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scroll-btn").style.display = "block";
+              } else {
+                document.getElementById("scroll-btn").style.display = "none";
+              }
+            }
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+
+        <div id="body">
+            <h1>poto muka</h1>
+            <p>Nama : Istighfariza Aprini<br>
+            NIM : 119140059<br>
+            Prodi : Teknik Informatika<br>
+            Tanggal lahir : 21 April 2001<br>
+            Alamat : Jl. Kaswari, Way Hui, Lampung Selatan<br>
+            Hobi : Nonton, baca webtoon, rebahan, ngehalu<br>
+            ig: @rinii._x</p>
+        </div>
+        <div id="berita">
+            <center><h1>BERITA ITERA</h1></center>
+            <ul>
+                <li><b><a href="https://lampung.suara.com/read/2021/09/24/180307/dukung-perkuliahan-hybrid-itera-gelar-vaksinasi-bagi-mahasiswa">Vaksinasi Mahasiswa ITERA</a></b></li><br>
+                <li><b><a href="https://lampung.suara.com/read/2021/09/14/141239/gunakan-web-camera-tes-skd-cpns-di-itera-lampung-antisipasi-calo-tes">Tes CPNS di ITERA</a></b></li><br>
+                <li><b><a href="https://lampung.suara.com/read/2021/08/08/162549/bantu-warga-pulau-rimau-yang-kesulitan-air-tawar-mahasiswa-itera-buat-alat-distilasi">Inovasi</a></b></li>
+            </ul>
+        </div>
+        
+        <footer>
+            <P>copyright by Istighfariza Aprini_119140059
+            </P>
+
+        </footer>
+
+    </body>
+</html>
