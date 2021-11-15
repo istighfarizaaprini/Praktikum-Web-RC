@@ -14,22 +14,22 @@ class buah
 
     public function getMangga(){
         $this->totalMangga = $this->mangga * 15000;
-        echo "<br>harga mangga : ".$this->totalMangga;
+        echo "<br>Harga mangga : Rp".$this->totalMangga;
     }
 
     public function getJambu(){
         $this->totalJambu = $this->jambu * 13000;
-        echo "<br>harga jambu : ".$this->totalJambu;
+        echo "<br>Harga jambu : Rp".$this->totalJambu;
     }
 
     public function getSalak(){
         $this->totalSalak = $this->salak * 10000;
-        echo "<br>harga salak : ".$this->totalSalak;
+        echo "<br>Harga salak : Rp".$this->totalSalak;
     }
 
     public function total(){
         $total = $this->totalMangga + $this->totalJambu + $this->totalSalak;
-        echo "<br>total belanjaan = ". $total;
+        echo "<br>Total belanjaan = Rp". $total;
     }
 }
 
